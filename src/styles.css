@@ -13,10 +13,11 @@ main{
 }
 
 .details {
-  @apply px-4 pt-8
+  @apply px-4 pt-8 bg-[url('./images/pattern-bg-mobile.png')] md:bg-[url('./images/pattern-bg-desktop.png')]
 }
 
 h1 {
-  @apply text-3xl font-medium text-center
+  @apply text-3xl font-medium text-center text-white mb-8
 }
+
 

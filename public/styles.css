@@ -547,15 +547,26 @@ main{
 }
 
 .details{
+  background-image: url('./images/pattern-bg-mobile.png');
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
 }
 
+@media (min-width: 768px){
+  .details{
+    background-image: url('./images/pattern-bg-desktop.png');
+  }
+}
+
 h1{
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 
