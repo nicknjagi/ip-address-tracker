@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  @apply font-rubik text-lg
+}
+
+main{
+  @apply min-h-[100vh]
+}
+
+.details {
+  @apply px-4 pt-8
+}
+
+h1 {
+  @apply text-3xl font-medium text-center
+}
+
