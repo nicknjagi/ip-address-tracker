@@ -20,4 +20,14 @@ h1 {
   @apply text-3xl font-medium text-center text-white mb-8
 }
 
+.input-container {
+  @apply flex
+}
 
+.input-container input {
+  @apply w-full max-w-2xl py-4 px-6 rounded-tl-2xl rounded-bl-2xl cursor-pointer
+}
+
+.input-container button {
+  @apply px-6 bg-black hover:bg-VeryDarkGray cursor-pointer rounded-tr-2xl rounded-br-2xl 
+}
