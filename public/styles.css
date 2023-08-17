@@ -574,19 +574,19 @@ h1{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.input-container{
+#form{
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
 @media (min-width: 768px){
-  .input-container{
+  #form{
     margin-bottom: 3rem;
   }
 }
 
-.input-container input{
+#form input{
   width: 100%;
   max-width: 32rem;
   cursor: pointer;
@@ -598,7 +598,7 @@ h1{
   padding-right: 1.5rem;
 }
 
-.input-container button{
+.search-btn{
   cursor: pointer;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -608,7 +608,7 @@ h1{
   padding-right: 1.5rem;
 }
 
-.input-container button:hover{
+.search-btn:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 17% / var(--tw-bg-opacity));
 }

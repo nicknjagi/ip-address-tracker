@@ -20,15 +20,15 @@ h1 {
   @apply text-3xl font-medium text-center text-white mb-8
 }
 
-.input-container {
+#form {
   @apply flex mb-6 md:mb-12 justify-center
 }
 
-.input-container input {
+#form input {
   @apply w-full max-w-lg py-4 px-6 rounded-tl-2xl rounded-bl-2xl cursor-pointer
 }
 
-.input-container button {
+.search-btn {
   @apply px-6 bg-black hover:bg-VeryDarkGray cursor-pointer rounded-tr-2xl rounded-br-2xl 
 }
 
