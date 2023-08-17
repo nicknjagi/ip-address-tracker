@@ -51,3 +51,7 @@ h1 {
 .fetched-details div:last-child{
   @apply md:border-none 
 }
+
+.map-container {
+  @apply h-[600px] md:h-[67vh]
+}
