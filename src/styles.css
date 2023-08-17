@@ -13,7 +13,7 @@ main{
 }
 
 .details {
-  @apply px-4 pt-8 bg-[url('./images/pattern-bg-mobile.png')] md:bg-[url('./images/pattern-bg-desktop.png')] bg-cover bg-no-repeat h-[45vh] overflow-visible
+  @apply px-4 pt-8 bg-[url('./images/pattern-bg-mobile.png')] md:bg-[url('./images/pattern-bg-desktop.png')] bg-cover bg-no-repeat h-[45vh] md:h-[33vh] overflow-visible
 }
 
 h1 {
@@ -21,25 +21,33 @@ h1 {
 }
 
 .input-container {
-  @apply flex mb-6 md:mb-8 justify-center
+  @apply flex mb-6 md:mb-12 justify-center
 }
 
 .input-container input {
-  @apply w-full max-w-2xl py-4 px-6 rounded-tl-2xl rounded-bl-2xl cursor-pointer
+  @apply w-full max-w-lg py-4 px-6 rounded-tl-2xl rounded-bl-2xl cursor-pointer
 }
 
 .input-container button {
-  @apply px-6  bg-black hover:bg-VeryDarkGray cursor-pointer rounded-tr-2xl rounded-br-2xl 
+  @apply px-6 bg-black hover:bg-VeryDarkGray cursor-pointer rounded-tr-2xl rounded-br-2xl 
 }
 
-.details > div:last-child {
-  @apply bg-white flex flex-col md:flex-row md:flex-wrap text-center gap-5 py-6 px-4 rounded-2xl drop-shadow-lg max-w-[1100px] mx-auto
+.fetched-details {
+  @apply bg-white flex flex-col md:flex-row md:flex-nowrap text-center md:text-left gap-5 md:gap-8 py-6 md:py-8 px-4 md:px-6 rounded-2xl drop-shadow-lg max-w-xl md:max-w-[1100px] mx-auto
 }
 
-.details>div:last-child h3 {
+.fetched-details h3 {
   @apply text-DarkGray tracking-[0.1rem] font-medium text-sm mb-1
 }
 
-.details>div:last-child p {
+.fetched-details p {
   @apply text-2xl font-medium
+}
+
+.fetched-details div{
+  @apply md:border-r-[1px] md:border-DarkGray md:pr-12 lg:pr-14
+}
+
+.fetched-details div:last-child{
+  @apply md:border-none 
 }

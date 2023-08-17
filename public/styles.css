@@ -559,6 +559,7 @@ main{
 
 @media (min-width: 768px){
   .details{
+    height: 33vh;
     background-image: url('./images/pattern-bg-desktop.png');
   }
 }
@@ -581,13 +582,13 @@ h1{
 
 @media (min-width: 768px){
   .input-container{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 
 .input-container input{
   width: 100%;
-  max-width: 42rem;
+  max-width: 32rem;
   cursor: pointer;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -612,11 +613,11 @@ h1{
   background-color: hsl(0 0% 17% / var(--tw-bg-opacity));
 }
 
-.details > div:last-child{
+.fetched-details{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  max-width: 1100px;
+  max-width: 36rem;
   flex-direction: column;
   gap: 1.25rem;
   border-radius: 1rem;
@@ -632,13 +633,20 @@ h1{
 }
 
 @media (min-width: 768px){
-  .details > div:last-child{
+  .fetched-details{
+    max-width: 1100px;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: left;
   }
 }
 
-.details>div:last-child h3{
+.fetched-details h3{
   margin-bottom: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -648,8 +656,29 @@ h1{
   color: hsl(0 0% 59% / var(--tw-text-opacity));
 }
 
-.details>div:last-child p{
+.fetched-details p{
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+@media (min-width: 768px){
+  .fetched-details div{
+    border-right-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: hsl(0 0% 59% / var(--tw-border-opacity));
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .fetched-details div{
+    padding-right: 3.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .fetched-details div:last-child{
+    border-style: none;
+  }
 }
