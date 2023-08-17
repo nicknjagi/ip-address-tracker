@@ -33,7 +33,7 @@ h1 {
 }
 
 .fetched-details {
-  @apply bg-white flex flex-col md:flex-row md:flex-nowrap text-center md:text-left gap-5 md:gap-8 py-6 md:py-8 px-4 md:px-6 rounded-2xl drop-shadow-lg max-w-xl md:max-w-[1100px] mx-auto
+  @apply bg-white flex flex-col md:flex-row md:flex-nowrap text-center md:text-left gap-5 md:gap-8 py-6 md:py-8 px-4 md:px-6 rounded-2xl drop-shadow-lg max-w-xl md:max-w-[1100px] mx-auto relative z-30
 }
 
 .fetched-details h3 {
@@ -55,3 +55,7 @@ h1 {
 .map-container {
   @apply h-[600px] md:h-[67vh]
 }
+
+/* .leaflet-control-zoom{
+  @apply absolute bottom-0 left-0 z-20
+} */
